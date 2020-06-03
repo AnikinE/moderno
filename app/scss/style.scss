@@ -1550,7 +1550,7 @@
 .product-one__tabs{
   border: 1px solid #d7d7d7;
   background-color: #fff;
-  width: 870px;
+  width: 100%;
   margin-bottom: 50px;
 }
 .tabs{
@@ -1598,6 +1598,7 @@
     width: 270px;
   }
 }
+
 
 
 .product-one__title{
@@ -1783,6 +1784,95 @@
   span{
     color: $bg;
     @include f500;
+  }
+}
+
+
+
+.settings__tabs{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+  .tabs{
+    min-width: 270px;
+    height: 100%;
+    margin-right: 30px;
+    border: 1px solid #d7d7d7;
+    border-bottom: none;
+    background-color: #fff;
+    display: block;
+    text-align: left;
+    .settings__tab{
+      display: block;
+      border-left: none;
+      border-bottom: 1px solid #d7d7d7;
+      @include f500;
+      font-size: 14px;
+      line-height: 14px;
+      color: #707070;
+      padding: 17px 17px 17px 50px;
+      &.active{
+        border-bottom: 1px solid $green;
+        color: #37474f;
+        &::before{
+          color: $green;
+        }
+      }
+      &::before{
+        left: 24px;
+        color: #707070;
+      }
+    }
+  }
+}
+.settings__tab-content{
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  background-color: #fff;
+}
+.page-box__title{
+  @include f500;
+  color: $bg;
+  font-size: 24px;
+  line-height: 24px;
+  border-bottom: 1px solid #d7d7d7;
+  padding: 18px 32px;
+}
+.page-box__content{
+  padding: 30px 35px 76px;
+  button{
+    width: 108px;
+    height: 46px;
+    color: #fff;
+    background-color: $green;
+    @include f500;
+    font-size: 15px;
+    line-height: 15px;
+    border: none;
+    cursor: pointer;
+    margin-left: 258px;
+  }
+}
+.settings__line{
+  label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    input,
+    select{
+      height: 40px;
+      width: 540px;
+      border: 1px solid #d7d7d7;
+      background-color: #f9f9f9;
+      color: $bg;
+      padding: 0 20px;
+      font-family: 'Roboto-Regular', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+    }
   }
 }
 
